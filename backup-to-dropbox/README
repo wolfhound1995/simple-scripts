@@ -1,1 +1,3 @@
+Ensure you update the placeholders (/path/to/..., your_mysql_username, your_mysql_password, your_database_name) with the appropriate values for your setup.
+
 The clear_old_backups function uses ls with the -t option to list the backup files in the backup directory, sorted by modification time (newest first). The tail -n +4 command is then used to skip the three most recent files, leaving only the older ones. Finally, xargs rm -- is used to delete these older backup files.
