@@ -1,0 +1,8 @@
+This script outlines a deployment process with these steps:
+
+Set up necessary directories and variables.
+Backup the current release.
+Create a new release directory.
+Update a symbolic link to point to the new release.
+Restart services (in this example, Apache and Nginx).
+Display completion message.
