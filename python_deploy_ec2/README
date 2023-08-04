@@ -1,0 +1,12 @@
+Make sure you have the boto3 library installed (pip install boto3) and AWS credentials configured properly 
+(either in your environment variables or using AWS CLI configuration).
+
+The script uses the boto3 library to interact with AWS services.
+The create_ec2_instance function creates an EC2 instance using the specified image ID, 
+instance type, and key name. It waits until the instance is in the "running" state 
+and then prints the instance ID and public IP address.
+The deploy_web_server function connects to the EC2 instance using SSH and installs 
+Apache web server. It also creates a simple HTML page with the text 
+"Hello from DevOps Automation!" and serves it using Apache.
+In the __main__ section, the script specifies the AWS EC2 parameters such as 
+image ID, instance type, key name, user, and key path. It then creates an EC2 instance and deploys a web server on it.
